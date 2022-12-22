@@ -19,7 +19,7 @@ def get_info():
     while not valid:
         try:
             phone_number = (input('Введите номер телефона: ')).replace(' ', '')
-            if len(phone_number) != 1:
+            if len(phone_number) != 11:
                 print('В номере телефона должно быть 11 цифр.')
             else:
                 phone_number = int(phone_number)
@@ -63,9 +63,9 @@ def output_data(list):
     match op:
         case 1:
             print()
-            print(("{:<15}{:<10}{:<10}{:<10}".format(*a)).upper())
+            print(("{:<15}{:<10}{:<15}{:<10}".format(*a)).upper())
             for x in list:
-                print("{:<15}{:<10}{:<10}{:<10}".format(*x))
+                print("{:<15}{:<10}{:<15}{:<10}".format(*x))
 
         case 2:
             for x in list:
