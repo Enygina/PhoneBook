@@ -11,8 +11,8 @@ def button_click():
             case 1:
                 data = view.get_info()
                 recording_data.rec_csv(data)
-                # recording_data.rec_txt(data)
-                # logger.log_data(data)
+                recording_data.rec_txt(data)
+                logger.log_data(data)
                 exit(button_click())
             case 2:
                 lastname = recording_data.output_csv()
